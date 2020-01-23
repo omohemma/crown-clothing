@@ -2,6 +2,13 @@ import React from "react";
 import MenuItem from "../menu-item/menu-item.component";
 import "./directory.styles.scss";
 
+/**
+ * A class component named Directory 
+ * that has a state of the sections of an ecommerce categories  
+ * Menu-item is imported and iterated with the sections of ecommerce categores
+ * using map function, destructuring and props
+ */
+
 class Directory extends React.Component {
   constructor() {
     super();
