@@ -1,9 +1,12 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
 
-//Functional Component to implement Routing
+/** Functional Component to implement Routing
+* Use Route(<Route />) empty tag to link pages
+*
+*/
 const HatsPage = () => {
   return (
     <div>
@@ -16,8 +19,10 @@ const HatsPage = () => {
 function App() {
   return (
     <div>
-      <Route exact path="/" component={Homepage} />
-      <Route path="/hats" component={HatsPage} />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/hats" component={HatsPage} />
+      </Switch>
     </div>
   );
 }
