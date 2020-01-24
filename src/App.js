@@ -4,9 +4,9 @@ import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
 
 /** Functional Component to implement Routing
-* Use Route(<Route />) empty tag to link pages
-*
-*/
+ * Use Route(<Route />) empty tag to link pages
+ *
+ */
 const HatsPage = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ function App() {
     <div>
       <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route path="/hats" component={HatsPage} />
+        <Route path="/shop/hats" component={HatsPage} />
       </Switch>
     </div>
   );
