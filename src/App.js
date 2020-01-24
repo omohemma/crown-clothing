@@ -3,7 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
 
-/** Functional Component to implement Routing
+/** 
+ * Functional Component to implement Routing
  * Use Route(<Route />) empty tag to link pages
  *
  */

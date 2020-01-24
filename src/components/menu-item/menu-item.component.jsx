@@ -8,7 +8,10 @@ import { withRouter } from "react-router-dom";
  * props are destructured
  * Css in JS:
  * Template strings used for accomodate props(size) and css style(menu-item)
- * Css styles(backgroundImage) written to accomodate props(imageUrl) as url value
+ * Css styles(backgroundImage) written to accomodate props(imageUrl) as url value.
+ * Passing in linkUrl on every ecommerce categories as a received props 
+ * and match with Router component after getting router history with "withRouter" wrapped when 
+ * exporting component.
  */
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => {

@@ -8,6 +8,7 @@ import "./directory.styles.scss";
  * that has a state of the sections of an ecommerce categories
  * Menu-item is imported and iterated with the sections of ecommerce categores
  * using map function, destructuring and props
+ * using spread operator to send props to child component
  */
 
 class Directory extends React.Component {
