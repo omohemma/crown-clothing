@@ -2,6 +2,15 @@ import React from "react";
 import MenuItem from "../menu-item/menu-item.component";
 import "./directory.styles.scss";
 
+
+/**
+ * A class component named Directory
+ * that has a state of the sections of an ecommerce categories
+ * Menu-item is imported and iterated with the sections of ecommerce categores
+ * using map function, destructuring and props
+ * using spread operator to send props to child component
+ */
+
 class Directory extends React.Component {
   constructor() {
     super();
@@ -47,8 +56,8 @@ class Directory extends React.Component {
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map(({ id, imageUrl, title, size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
         ))}
       </div>
     );

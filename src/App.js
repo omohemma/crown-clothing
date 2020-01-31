@@ -1,11 +1,29 @@
 import React from "react";
-import  Homepage from "./pages/homepage/homepage.component";
+import { Route, Switch } from "react-router-dom";
+import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
 
+/** 
+ * Functional Component to implement Routing
+ * Use Route(<Route />) empty tag to link pages
+ *
+ */
+const HatsPage = () => {
+  return (
+    <div>
+      <h1>HATS PAGE</h1>
+    </div>
+  );
+};
+
+// Import All Pages into The Application Container
 function App() {
   return (
     <div>
-      <Homepage />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/shop/hats" component={HatsPage} />
+      </Switch>
     </div>
   );
 }
