@@ -1,3 +1,7 @@
+/**
+ * List of Collections and their respective items in a shop
+ */
+
 const SHOP_DATA = [
     {
         id: 1,

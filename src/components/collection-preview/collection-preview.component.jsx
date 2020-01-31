@@ -1,6 +1,11 @@
 import React from "react";
 import "./collection-preview.styles.scss";
+import CollectionItem from "../collection-item/collection-item.component";
 
+/**
+ * Filter Collections items by 4
+ * Receive Props of items from shop component
+ */
 const CollectionPreview = ({ title, items }) => {
   return (
     <div className="collection-preview">
@@ -8,8 +13,11 @@ const CollectionPreview = ({ title, items }) => {
       <div className="preview">
         {items
           .filter((item, idx) => idx < 4)
-          .map(item => (
-            <div key={item.id}>{item.name}</div>
+          .map(({ id, ...otherItemProps }) => (
+            <CollectionItem
+              key={id}
+              {...otherItemProps}
+            />
           ))}
       </div>
     </div>
