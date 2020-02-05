@@ -1,6 +1,12 @@
 import React from "react";
 import "./collection-item.styles.scss";
 
+/**
+ * Collection Item component
+ * Receive props from collection preview component
+ * css in js for backgroundimage with imageUrl passed as props
+ */
+
 const CollectionItem = ({ id, name, price, imageUrl }) => {
   return (
     <div className="collection-item">

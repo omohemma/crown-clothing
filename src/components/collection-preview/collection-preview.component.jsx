@@ -4,7 +4,7 @@ import CollectionItem from "../collection-item/collection-item.component";
 
 /**
  * Filter Collections items by 4
- * Receive Props of items from shop component
+ * Receive Props of items from shop component into COllectioniem component
  */
 const CollectionPreview = ({ title, items }) => {
   return (
